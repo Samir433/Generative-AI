@@ -26,7 +26,11 @@ template = PromptTemplate(
     partial_variables={"format_instructions": output_parser.get_format_instructions()}
 )
 
-prompt = template.format(country="India")
+# prompt = template.format(country="India")
 
-result = model.invoke(prompt)
-print(result.content)
+# result = model.invoke(prompt)
+
+# print(result.content)
+
+chain = template | model | output_parser
+print(chain.invoke({"country": "India"}))
