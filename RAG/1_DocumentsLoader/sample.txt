@@ -1,0 +1,4 @@
+New columns : Join Year, Exit Year, Quarter 2018_Q2
+Generates all quarterly periods between the earliest and latest Start Date
+It finds how many entries started on or before the quarter's end date and are still active (i.e., no termination date or terminated after the quarter).
+Stores the count of active entries for each quarter.

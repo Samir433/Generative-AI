@@ -1,0 +1,10 @@
+{
+    "title":"Student",
+    "description":"A student is a person who is studying at a school or university",
+    "type":"object",
+    "properties":{
+        "name":"string",
+        "age":"integer"
+    },
+    "required":["name"]
+}
