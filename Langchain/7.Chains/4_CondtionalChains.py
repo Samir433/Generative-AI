@@ -10,8 +10,6 @@ from typing import Literal
 
 load_dotenv()
 
-# model = ChatOpenAI(model="gpt-3.5-turbo")
-
 llm = HuggingFaceEndpoint(
     repo_id="google/gemma-2-2b-it",
     task="text-generation"
