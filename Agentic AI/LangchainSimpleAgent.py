@@ -49,3 +49,5 @@ response = agent_executor.invoke({"input": "Find the capital of Madhya Pradesh, 
 print(response)
 
 print(response['output'])
+
+# Step 6: Test the weather fetching tool
