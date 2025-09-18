@@ -1,4 +1,4 @@
-# main.py
+# app.py
 import streamlit as st
 from dotenv import load_dotenv
 from config import Config
