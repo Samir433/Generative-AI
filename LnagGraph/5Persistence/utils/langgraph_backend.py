@@ -12,11 +12,9 @@ import os
 load_dotenv()
 
 gemini = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-2.5-pro",
     google_api_key=os.getenv("GOOGLE_API_KEY"),
-    max_tokens=1024,
     temperature=0.5
-    # streaming=True
 )
 class SimpleState(TypedDict):
     messages: Annotated[list[BaseMessage], add_messages()]
